@@ -1,3 +1,6 @@
 export default {
-    searchedProducts: []
+    searchedProducts: [],
+    cart: [],
+    cartQuantity: 0,
+    total: 0,
 }

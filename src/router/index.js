@@ -4,9 +4,9 @@ import {
 } from 'vue-router'
 import Home from '../views/Home.vue'
 import Shop from '../views/Shop.vue'
-import LetterList from '../views/LetterList.vue'
 import DefaultLayout from '../components/DefaultLayout.vue'
-
+import ProductDetail from '../views/ProductDetail.vue'
+import Checkout from '../views/Checkout.vue'
 const routes = [{
         path: '/',
         component: DefaultLayout,
@@ -21,9 +21,14 @@ const routes = [{
                 component: Shop
             },
             {
-                path: '/letter/:letter',
-                name: 'byLetter',
-                component: LetterList
+                path: '/product-detail/:id',
+                name: 'productDetail',
+                component: ProductDetail
+            },
+            {
+                path: '/checkout',
+                name: 'checkout',
+                component: Checkout
             }
         ]
     },

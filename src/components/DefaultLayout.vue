@@ -1,8 +1,10 @@
 <template>
-    <NavBar />
- 
+  <NavBar />
 </template>
 
 <script setup>
-import NavBar from '../components/Navbar.vue'
+
+import NavBar from "./Navbar.vue";
+
+
 </script>
