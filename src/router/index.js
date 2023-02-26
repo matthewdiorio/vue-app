@@ -7,6 +7,8 @@ import Shop from '../views/Shop.vue'
 import DefaultLayout from '../components/DefaultLayout.vue'
 import ProductDetail from '../views/ProductDetail.vue'
 import Checkout from '../views/Checkout.vue'
+import Privacy from '../views/Privacy.vue'
+
 const routes = [{
         path: '/',
         component: DefaultLayout,
@@ -29,6 +31,11 @@ const routes = [{
                 path: '/checkout',
                 name: 'checkout',
                 component: Checkout
+            },
+            {
+                path: '/privacy',
+                name: 'privacy',
+                component: Privacy
             }
         ]
     },

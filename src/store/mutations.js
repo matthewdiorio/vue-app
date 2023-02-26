@@ -2,20 +2,17 @@ export function setSearchedProducts(state, products){
    state.searchedProducts = products
 };
 
-export function addToCart(state, product){
-    state.cartQuantity++;
+export function addToCart(state, product){ 
     const cartItem = state.cart.find((item) => item.id === product.id)
     if(cartItem){
         cartItem.count += 1
     } else {
         state.cart.push({ ...product, count: 1})
     }
-    console.log(state.cartQuantity)
-
+    state.cartQuantity++;
 }
 
 export function removeFromCart(state, product){
-    state.cartQuantity--;
     const cartItem = state.cart.find((item) => item.id === product.id)
     if(cartItem){
         cartItem.count -= 1
@@ -23,6 +20,7 @@ export function removeFromCart(state, product){
             state.cart = state.cart.filter((item) => item.id !== cartItem.id)
         }
     }
+    state.cartQuantity--;
 }
 
 export function removeEntireProduct(state, productId) {
@@ -34,9 +32,5 @@ export function removeEntireProduct(state, productId) {
   }
 
 export function calculateTotal(state){
-    let total = 0;
-    state.cart.forEach((item) => {
-        total += item.count * item.price
-    })
-    state.total = total;
+
 }
