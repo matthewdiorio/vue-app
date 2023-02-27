@@ -34,7 +34,7 @@ The main components of this project are as follows:
 - `store.js` - the Vuex store configuration for the application
 - `components` directory - contains all of the application's Vue components
 - `views` directory - contains the application's views, which are rendered by the router
-- `assets` directory - contains any static assets used by the application, such as images and fonts
+- `public` directory - contains any static assets used by the application, such as images and fonts
 
 ## Conclusion
 
