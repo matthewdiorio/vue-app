@@ -2,9 +2,6 @@
 
 This is a web application built with Vue3 Composition API that displays items retrieved from the https://dummyjson.com API using Axios. It also includes a shopping cart feature that persists across page refreshes using Vuex and local storage. The UI is styled using Tailwind CSS.
 
-## See it live
-
-The project is hosted on Firebase and can be viewed here: https://vuecommerce-77179.web.app
 
 ## Features
 
